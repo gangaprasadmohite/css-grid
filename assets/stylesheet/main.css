@@ -160,3 +160,58 @@ img {
 	background-color: #FFFFFF;
 	color: black;
 }
+.items i{
+	padding-top: 3rem;
+	font-size: 3rem;
+	padding-bottom: 1.5rem;
+}
+.items h4 {
+	padding-bottom: 1rem;
+}
+.items p {
+	line-height: 1.5;
+	font-size: 1rem;
+	font-weight: 300;
+	padding-bottom: 3rem;
+}
+
+
+.experience {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.exp {
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #FC683E;
+	color: white;;
+}
+.exp h2 {
+	color: white;
+	font-size: 2rem;
+	padding-top: 3rem;
+}
+.sub-head {
+	color: white;
+	font-size: 1rem;
+	padding-bottom: 3rem;
+}
+.exp i {
+	font-size: 2rem;
+	margin-right: 2rem;	
+}
+.i-text{
+	font-size:1.4rem;
+	line-height: 2rem; 
+	padding-bottom: 3rem;
+}
+.i-text span {
+	color: #753334;
+	font-size: 1rem;
+}
+.i-text p {
+	margin-left: 4.4rem;
+	font-size: 1rem;
+}
