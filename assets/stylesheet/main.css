@@ -10,12 +10,13 @@ body {
 .header {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	height: 100vh;
+	/*grid-template-areas: "header-img header-right";*/
 }
 .header-image {
 	background-image: url(../media/home-img.jpg);
- 	background-repeat: no-repeat;
-  	background-size: auto;
+ 	background-position:center;
+  	background-size: cover;
+  	grid-area: "header-img"
 }
 h1 {
 	padding-top: 2rem;
@@ -42,7 +43,7 @@ a {
 }
 .header-right {
 	background-color: #F5E3D7;
-	height: 100vh;
+	grid-area: "header-right";
 }
 img {
 	width: 100%
@@ -91,6 +92,7 @@ img {
 .skills {
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
+	
 }
 .skills .welcome {
 	padding-top: 2rem;
@@ -100,9 +102,14 @@ img {
 	width: 90%;
 	margin: 0 auto;
 	line-height: 1.3;	
+	grid-area: "donec;"
 }
 .col-3 {
 	background-color: #ECAF4E;
+	grid-area: "skills";
+}
+.col-2 {
+	grid-area: "skills-img"
 }
 .skills .sub-heading {
 	padding-top: 1rem;
@@ -146,19 +153,22 @@ img {
 }
 .items-1 {
 	background-color: #ECAF4E;
-	color: white;
+	color: white;grid-area: "items-1"
 }
 .items-2 {
 	color: white;
-	background-color: #FC683E;	
+	background-color: #FC683E;
+	grid-area: "items-2"	
 }
 .items-3 {
 	color: white;
 	background-color: #161616;
+	grid-area: "items-3"
 }
 .items-4 {
 	background-color: #FFFFFF;
 	color: black;
+	grid-area: "items-4"
 }
 .items i{
 	padding-top: 3rem;
@@ -183,6 +193,12 @@ img {
 .experience {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+.experience .img {
+	grid-area: "exp-img"
+}
+.exp {
+	grid-area: "exp-text";
 }
 
 
@@ -350,8 +366,30 @@ small {
 
 
 
+@media only screen and  (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+	.header {
+		grid-template-columns: 1fr;
+	}
+	.skills {
+		grid-template-columns: 1fr;
+	}
+ 	.services {
+ 		grid-template-columns: 1fr;
+ 	}
+ 	.experience {
+ 		grid-template-columns: 1fr; 	
+ 	}
+ 	.contact {
+ 		grid-template-columns: 1fr;
+ 	}
+ 	.header-image {
+ 		height: 100vh;
+ 	}
+ 	h1 {
+ 		margin-left: 1rem;
+ 	}
 
-@media only screen and (max-width: 768px) {
-  .header-image, .header-right {
-  	width: 100%;
-  }
+}
