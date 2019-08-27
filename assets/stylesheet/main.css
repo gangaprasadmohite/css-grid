@@ -362,7 +362,12 @@ small {
 .social {
 	word-spacing: 2rem;
 }
-
+.bar {
+	display: none;
+}
+#toggle {
+	display: none;
+}
 
 
 
@@ -391,5 +396,39 @@ small {
  	h1 {
  		margin-left: 1rem;
  	}
-
+  .main-nav {
+    display: none;
+    position: absolute;
+    opacity: 0.5;
+    padding-top: 6.2rem;
+    text-align: center;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #959696;
+  }
+  .main-nav-link {
+    display: block;
+    padding: 2rem 0;
+    color: #00fad0;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .bar {
+    display: inline-block;
+    font-size: 1.5rem;
+    color:#ffc219;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 99;
+  }
+  #toggle:checked ~ .main-nav {
+    display: block;
+  }
+  .flex-100 {
+    flex: 0 1 100%;
+  }
+ 	
 }
